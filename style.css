@@ -1,80 +1,66 @@
 /*Name this external file gallery.css*/
-body{
-		background: linear-gradient(rgba(40, 112, 180, 0.801), rgba(192, 255, 192, 0.26));
-    background-attachment: fixed ;
+body {
+  background: linear-gradient(rgba(40, 112, 180, 0.801), rgba(192, 255, 192, 0.26));
+  background-attachment: fixed;
   /
-    
 }
-
-#image{
-    line-height:650px;
-		width: 375px;
-    height: 550px;
-		border:5px solid rgb(255, 255, 255);
-		margin-left: 90px;
-    background-color: #0000007e;
-    background-image: url('');
-    background-repeat: no-repeat;
-    color:#FFFFFF;
-    background-size: 100%;
-    margin-bottom:25px;
-    font-size: 100%;
-    text-align: center;
+#image {
+  line-height: 650px;
+  width: 375px;
+  height: 550px;
+  border: 5px solid rgb(255, 255, 255);
+  margin-left: 90px;
+  background-color: #0000007e;
+  background-image: url('');
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  background-size: 100%;
+  margin-bottom: 25px;
+  font-size: 100%;
+  text-align: center;
 }
-.preview{
-		width:15%;
-		margin: 2% 5%;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10%;
-  
+.preview {
+  width: 15%;
+  margin: 2% 5%;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10%;
 }
-
-#photos-2024{
+#photos-2024 {
   justify-content: space-around;
 }
-img{
-		width:100%;
-    border-radius: 15%;
+img {
+  width: 100%;
+  border-radius: 15%;
 }
-
 .title-text {
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
-  font-weight:50;
+  font-weight: 50;
   font-size: auto;
-
 }
-
-/* body{
-  display:flex;
-} */
-
-main/* , #image */ {
-   display: flex;
-   /*align-content: center;*/
-justify-content: space-between;
+main {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-/*   align-items: center;
- */  /* row-gap: 90px; */
 }
-
-#imageContainer, #photos-2024{
+#imageContainer,
+#photos-2024 {
   width: auto;
   margin: auto;
   align-items: center;
   text-align: center;
-} 
+}
 
-#title{
+#title {
   background-color: #FFFFFF;
   color: rgba(40, 112, 180, 0.89);
 }
 
-.text{
+.text {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
 }
 
-#photo2024-text{
+#photo2024-text {
   color: #ffffffaf;
 }
