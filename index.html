@@ -8,7 +8,7 @@
 	<!-- <script src="js/script.js"></script> -->
 </head>
 
-<body>
+<body onload="setTabIndex()">
 	<section>
 		<header>
 			<h1>My Photo Gallery</h1>
@@ -22,22 +22,21 @@
 		<header>
 			<h2>Look at some 2024 memories</h2>
 		</header>
-		<img class="preview" alt="Styling with a Bandana" src="images/comovitral.jpeg" onmouseover="upDate(this)"
-			onmouseout="unDo()">
+		<img class="preview" alt="Cosmovitral in Toluca" src="images/comovitral.jpeg" onmouseover="upDate(this)"
+			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
 		<img class="preview" alt="Camping in Dos Aguas park" src="images/dosAguas.jpeg" onmouseover="upDate(this)"
-			onmouseout="unDo()">
+			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" src="images/paseoDeLasEsculturas.jpeg" alt="Sculpture trail in CU-UNAM"
-			onmouseover="upDate(this)" onmouseout="unDo()">
+		<img class="preview"  alt="Sculpture trail in CU-UNAM" src="images/paseoDeLasEsculturas.jpeg"	onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" src="images/pueblitoAbuelitaMoi.jpeg" alt="Grandmother's town" onmouseover="upDate(this)"
-			onmouseout="unDo()">
+		<img class="preview" alt="Grandmother's town" src="images/pueblitoAbuelitaMoi.jpeg"  onmouseover="upDate(this)"
+			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" src="images/repsa.jpeg" alt="A day in REPSA-UNAM" onmouseover="upDate(this)"
-			onmouseout="unDo()">
+		<img class="preview" alt="A day in REPSA-UNAM" src="images/repsa.jpeg"  onmouseover="upDate(this)"
+			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" src="images/tepoztlan.jpeg" alt="Hollidays rith Moi in Tepoztlan" onmouseover="upDate(this)" onmouseout="unDo()">
+		<img class="preview" alt="Hollidays with Moi in Tepoztlan"src="images/tepoztlan.jpeg"  onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
 	</section>
 	<script src="/JavaScript/gallery.js"></script>
