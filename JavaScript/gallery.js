@@ -21,3 +21,20 @@ function unDo() {
    //Cambiar texto por alt
    divSapce.textContent = 'Hover over an image below to display here.';
 }
+
+const setTabIndex = () =>{
+   let images = document.getElementsByTagName('img'); 
+   for (const eachImage of images){
+      eachImage.setAttribute('tabindex', '0');
+   }
+}
+
+function onFocus(thisImage) {
+   console.log(`${thisImage.alt}`);
+   thisImage.setAttribute('style', 'border:10px solid rgba(255, 255, 255, 0.795)');
+}
+
+function onBlur(thisImage) {
+   console.log(`you are blurring ${thisImage.alt}`);
+   thisImage.removeAttribute('style');
+}
