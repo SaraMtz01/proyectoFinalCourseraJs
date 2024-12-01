@@ -23,6 +23,7 @@ body{
 		width:7%;
 		margin:3%;
     border: 3px solid rgb(255, 255, 255);
+    border-radius: 10%;
 }
 
 #photos-2024{
@@ -30,6 +31,7 @@ body{
 }
 img{
 		width:100%;
+    border-radius: 15%;
 }
 
 h1, h2 {
