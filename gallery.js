@@ -3,23 +3,18 @@
 
 function upDate(previewPic) {
    const divSapce = document.getElementById('image');
-
    //Cambiar texto por alt
    divSapce.innerHTML = previewPic.alt;
-
-
    //Cambiar fondo por imagen
    divSapce.setAttribute('style', `background-image: url(${previewPic.src})`);
-
 }
 
 function unDo() {
    const divSapce = document.getElementById('image');
    // Cmbiar fondo por ninguna imagen
    divSapce.setAttribute('style', `background-image: url('')`);
-
    //Cambiar texto por alt
-   divSapce.textContent = 'Hover over an image below to display here.';
+   divSapce.textContent = 'Hover over an image to display here.';
 }
 
 function setTabIndex() {
@@ -32,6 +27,11 @@ function setTabIndex() {
 function onFocus (thisImage) {
    console.log(`${thisImage.alt}`);
    thisImage.setAttribute('style', 'border:10px solid rgba(255, 255, 255, 0.795)');
+   const divSapce = document.getElementById('image');
+   //Cambiar texto por alt
+   divSapce.innerHTML = thisImage.alt;
+   //Cambiar fondo por imagen
+   divSapce.setAttribute('style', `background-image: url(${thisImage.src})`);
 }
 
 function onBlur (thisImage) {
