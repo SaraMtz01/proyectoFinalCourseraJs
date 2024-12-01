@@ -1,39 +1,80 @@
 /*Name this external file gallery.css*/
 body{
-		margin: 2%;
-		border: 1px solid black;
-		background-color: #b3b3b3;
+		background: linear-gradient(rgba(40, 112, 180, 0.801), rgba(192, 255, 192, 0.26));
+    background-attachment: fixed ;
+  /
+    
 }
+
 #image{
     line-height:650px;
-		width: 575px;
-    height: 650px;
-		border:5px solid black;
-		margin:0 auto;
-    background-color: #8e68ff;
+		width: 375px;
+    height: 550px;
+		border:5px solid rgb(255, 255, 255);
+		margin-left: 90px;
+    background-color: #0000007e;
     background-image: url('');
     background-repeat: no-repeat;
     color:#FFFFFF;
-    text-align: center;
     background-size: 100%;
     margin-bottom:25px;
-    font-size: 150%;
+    font-size: 100%;
+    text-align: center;
 }
 .preview{
-		width:7%;
-		margin:3%;
+		width:15%;
+		margin: 2% 5%;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10%;
+  
 }
 
 #photos-2024{
-  text-align: center;
+  justify-content: space-around;
 }
 img{
 		width:100%;
     border-radius: 15%;
 }
 
-h1, h2 {
+.title-text {
   text-align: center;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight:50;
+  font-size: auto;
+
+}
+
+/* body{
+  display:flex;
+} */
+
+main/* , #image */ {
+   display: flex;
+   /*align-content: center;*/
+justify-content: space-between;
+  align-items: center;
+/*   align-items: center;
+ */  /* row-gap: 90px; */
+}
+
+#imageContainer, #photos-2024{
+  width: auto;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+} 
+
+#title{
+  background-color: #FFFFFF;
+  color: rgba(40, 112, 180, 0.89);
+}
+
+.text{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+
+#photo2024-text{
+  color: #ffffffaf;
 }
