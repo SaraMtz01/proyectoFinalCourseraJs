@@ -1,9 +1,12 @@
 /*Name this external file gallery.css*/
+
+
 body {
   background: linear-gradient(rgba(40, 112, 180, 0.801), rgba(192, 255, 192, 0.26));
   background-attachment: fixed;
   /
 }
+
 #image {
   line-height: 650px;
   width: 375px;
@@ -16,37 +19,43 @@ body {
   color: #FFFFFF;
   background-size: 100%;
   margin-bottom: 25px;
-  font-size: 100%;
-  text-align: center;
+  font-size: 150%;
 }
+
 .preview {
   width: 15%;
   margin: 2% 5%;
   border: 3px solid rgb(255, 255, 255);
   border-radius: 10%;
 }
-#photos-2024 {
+
+/* #photos-2024 {
   justify-content: space-around;
-}
+} */
+
 img {
   width: 100%;
   border-radius: 15%;
 }
+
 .title-text {
   text-align: center;
   font-family: "Hammersmith One", sans-serif;
   font-weight: 50;
-  font-size: auto;
+  font-size:100%;
 }
+
 main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+ 
+   align-items: center; 
 }
+
 #imageContainer,
 #photos-2024 {
   width: auto;
-  margin: auto;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
 }
@@ -64,3 +73,29 @@ main {
 #photo2024-text {
   color: #ffffffaf;
 }
+
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 1200px) {
+
+  main {
+    display: block;
+    
+  }
+  #image {
+      width: 50%; 
+      height: auto;
+      margin: auto;
+
+  }
+ 
+  .preview {
+      max-width: 9%; /* Ajuste de vistas previas para pantallas medianas */
+      margin: 2%;
+  }
+  #photos-2024{
+    justify-content: space-evenly;
+  }
+}
+
+
