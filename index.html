@@ -5,40 +5,56 @@
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
 	<link rel="stylesheet" href="style.css">
-	<!-- <script src="js/script.js"></script> -->
+
+	<!-- Fuente título -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
+
+	<!-- Fuente image -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Hammersmith+One&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
 </head>
 
 <body onload="setTabIndex()">
-	<section>
-		<header>
-			<h1>My Photo Gallery</h1>
-		</header>
-		<div id="image">
-			Hover over an image below to display here.
-		</div>
-	</section>
+	<header id="title" class="title-text">
+		<h1>My Photo Gallery</h1>
+	</header>
 
-	<section id="photos-2024">
-		<header>
-			<h2>Look at some 2024 memories</h2>
-		</header>
-		<img class="preview" alt="Cosmovitral in Toluca" src="images/comovitral.jpeg" onmouseover="upDate(this)"
-			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+	<main>
+		<section id="imageContainer">
+			<div id="image" class="text">
+				Hover over an image below to display here.
+			</div>
+		</section>
 
-		<img class="preview" alt="Camping in Dos Aguas park" src="images/dosAguas.jpeg" onmouseover="upDate(this)"
-			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+		<section id="photos-2024">
+			<header>
+				<h2 id="photo2024-text" class="title-text">Look at some 2024 memories</h2>
+			</header>
+			<img class="preview" alt="Cosmovitral in Toluca" src="images/comovitral.jpeg" onmouseover="upDate(this)"
+				onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview"  alt="Sculpture trail in CU-UNAM" src="images/paseoDeLasEsculturas.jpeg"	onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+			<img class="preview" alt="Camping in Dos Aguas park" src="images/dosAguas.jpeg" onmouseover="upDate(this)"
+				onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" alt="Grandmother's town" src="images/pueblitoAbuelitaMoi.jpeg"  onmouseover="upDate(this)"
-			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+			<img class="preview" alt="Sculpture trail in CU-UNAM" src="images/paseoDeLasEsculturas.jpeg"
+				onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" alt="A day in REPSA-UNAM" src="images/repsa.jpeg"  onmouseover="upDate(this)"
-			onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+			<img class="preview" alt="Grandmother's town" src="images/pueblitoAbuelitaMoi.jpeg"
+				onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-		<img class="preview" alt="Hollidays with Moi in Tepoztlan"src="images/tepoztlan.jpeg"  onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+			<img class="preview" alt="A day in REPSA-UNAM" src="images/repsa.jpeg" onmouseover="upDate(this)"
+				onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
 
-	</section>
+			<img class="preview" alt="Hollidays with Moi in Tepoztlan" src="images/tepoztlan.jpeg"
+				onmouseover="upDate(this)" onmouseout="unDo()" onfocus="onFocus(this)" onblur="onBlur(this)">
+
+		</section>
+	</main>
 	<script src="gallery.js"></script>
 
 </body>
