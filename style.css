@@ -106,9 +106,17 @@ main {
     display: block;
   }
 
+  .text{
+  display:block;
+  }
+  #text-image{
+    font-size: 70%;
+    
+  }
+
   #image {
     width: 80%;
-    height:30cap;
+    height:29cap;
     margin: auto;
   }
 
