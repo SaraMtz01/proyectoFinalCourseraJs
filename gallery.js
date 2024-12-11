@@ -14,7 +14,7 @@ function unDo() {
    // Cmbiar fondo por ninguna imagen
    divSapce.setAttribute('style', `background-image: url('')`);
    //Cambiar texto por alt
-   divSapce.textContent = 'Hover over an image to display here.';
+   divSapce.innerHTML = '<span id="text-image">Hover over an image to display here.</span>';
 }
 
 function setTabIndex() {
